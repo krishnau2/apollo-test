@@ -1,22 +1,48 @@
 import React from "react";
-import {
-  MdRotateLeft,
-  MdRotateRight,
-  MdPauseCircleFilled
-} from "react-icons/md";
+
+import AudioControl from "./AudioControl";
 
 const Main = () => {
   return (
     <div className="container">
-      <div className="audio-control-wrap">
-        <div className="audio-controls">
-          <MdRotateLeft className="rotate-btn" />
-          <MdPauseCircleFilled className="pause-btn" />
-          <MdRotateRight className="rotate-btn" />
+      <AudioControl />
+      <div className="audio-timeline-wrap">
+        <div className="timer">
+          <span className="current-time">04:23</span>
+          <span className="total-time">/ 18:03</span>
         </div>
-        <button className="play-speed-btn">1.0x</button>
+        <div className="graph-container">
+          <div className="graph-row">
+            <div className="graph-name"></div>
+            <div className="graph">
+              <div className="graph-block ">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+              </div>
+              <div className="graph-block offset">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="graph-wrap"></div>
       <div className="transcript-wrap"></div>
     </div>
   );

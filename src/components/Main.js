@@ -14,7 +14,7 @@ const Main = () => {
           <span className="current-time">04:23</span>
           <span className="total-time">/ 18:03</span>
         </div>
-        <AudioGraph />
+        <AudioGraph word_timings={data.word_timings} />
       </div>
       <Transcript data={data} />
     </div>

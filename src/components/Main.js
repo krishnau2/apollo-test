@@ -1,6 +1,8 @@
 import React from "react";
 
 import AudioControl from "./AudioControl";
+import Transcript from "./Transcript";
+import data from "../data";
 
 const Main = () => {
   return (
@@ -43,7 +45,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="transcript-wrap"></div>
+      <Transcript data={data} />
     </div>
   );
 };

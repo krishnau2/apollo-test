@@ -2,7 +2,7 @@
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid;
+  border: 1px solid #bcb5b9;
   margin-top: 20px;
 }
 .audio-control-wrap {
@@ -37,7 +37,7 @@
   padding: 20px 30px;
   padding-left: 30px;
   background-color: #fafbfc;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #dfe2e5;
   height: 200px;
 }
 .timer {
@@ -82,6 +82,35 @@
   margin-left: 50px;
 }
 .transcript-wrap {
-  border: 1px solid;
-  height: 200px;
+  padding: 20px 30px;
+}
+.transcript-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.transcript-time {
+  padding-top: 5px;
+}
+.transcript-text {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.first-person .transcript-time {
+  color: #2f77c6;
+}
+.first-person .transcript-text {
+  border-left: 2px solid #c2ddf0;
+}
+
+.second-person {
+  margin-left: 50px;
+}
+
+.second-person .transcript-time {
+  color: #d85c44;
+}
+.second-person .transcript-text {
+  border-left: 2px solid #f6d6ce;
 }
